@@ -1,0 +1,549 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+//Custom styles here
+body
+  min-width: 310px
+.borders
+  border-left: 70px solid #aaaaaa
+  border-right: 70px solid #aaaaaa
+  padding: 0
+.fix
+  margin: 0
+  padding: 0
+
+
+//HEADER
+.header
+  border-bottom: 10px solid $blue
+
+.menu_drop
+  li
+    display: block
+
+
+.nav
+  padding-top: 150px
+  li
+    display: inline-block
+    font-family: 'Open Sans Condensed', sans-serif
+    height: 10px
+
+    &:last-child
+      padding-left: 180px
+      i
+        font-size: 15pt
+    span
+      margin-left: 15px
+      margin-right: 15px
+      vertical-align: middle
+      color: $blue
+      font-weight: bolder
+    a
+      font-size: 15pt
+      font-family: 'Open Sans Condensed', sans-serif
+      font-weight: 300
+      color: $font-color
+      display: inline-block
+      height: 40px
+      text-decoration: none
+      &:hover
+        color: $blue
+        cursor: pointer
+  .menu_drop
+    top: -1000%
+    margin: 0
+    padding: 0
+    position: absolute
+    z-index: 1
+    i
+      padding-right: 5px
+      color: $blue
+    li
+      display: block
+      background-color: #e5e5e5
+      height: 60px
+      width: 250px
+      &:last-child
+        padding: 0
+      &:hover
+        background-color: $blue
+        .sub_l
+          color: white
+        .menu1
+          color: white
+      .menu1
+        display: block
+        padding-top: 17px
+        padding-left: 10px
+        text-decoration: none
+        i
+          padding-right: 5px
+
+.menu_list
+  &:hover
+    .menu_drop
+      top: 100%
+
+
+.menu_drop2
+  height: 300px
+  background-color: #e5e5e5
+  margin: 0
+  padding: 0
+  position: absolute
+  z-index: 1
+  left: -1000%
+  top: 0%
+  border-left: 2px solid $font-color
+  i
+    padding-right: 5px
+    color: $blue
+  li
+    display: block
+    background-color: #e5e5e5
+    height: 60px
+    width: 250px
+    text-decoration: underline
+    padding-left: 30px !important
+    a
+      display: block
+      padding-top: 17px
+      padding-left: 10px
+      text-decoration: none
+    &:hover
+      background-color: $blue
+      i
+        color: white
+      a
+        color: white
+        text-decoration: underline
+.menu_list2
+  position: relative
+  &:hover
+    .menu_drop2
+      top: 0%
+      left: 100%
+
+.search_drop
+  background-color: #e5e5e5
+  margin: 0
+  padding: 0
+  position: absolute
+  z-index: 1
+  left: 65.3%
+  top: -10000%   //448%
+  height: 65px
+  width: 269px
+  text-align: center
+  input
+    width: 200px
+    border: 1px solid $font-color
+    margin-top: 12px
+    margin-left: 20px
+
+
+.out
+  height: 50px
+  padding-left: 20px
+
+.search_list
+    font-size: 26px
+    height: 50px
+    &:hover
+      .search_drop
+        top: 104%
+      .out
+        color: $blue
+
+.navi
+  padding-top: 17px
+  padding-left: 10px
+  &:hover
+    color: white !important
+
+
+
+.right_nav
+  float: right
+  li
+    display: inline-block
+    font-size: 13pt
+    font-family: 'Open Sans Condensed', sans-serif
+    font-weight: 300
+    padding-right: 40px
+    &:first-child
+      padding-right: 15px
+      position: relative
+      &:hover
+        .sprache
+          right: -15%
+          top: 100%
+        color: $blue
+        cursor: pointer
+    &:nth-child(2)
+      &:hover
+        color: $blue
+        cursor: pointer
+    i
+      padding-right: 5px
+.sprache
+  position: absolute
+  top: -1000%
+  z-index: 1
+  border: 1px solid  $font-color
+  padding-left: 22px
+  li
+    padding-right: 15px
+    display: block
+    a
+      color: $font-color
+      &:hover
+        color: $blue
+
+
+                                      //CONTENT
+h2
+  font-weight: 500
+  color: $font-color
+  font-family: 'Open Sans Condensed', sans-serif
+  padding-left: 15px
+  i
+    padding: 3px
+  span
+    color: $blue
+h1
+  font-size: 27pt
+  padding-left: 13px
+  margin: 0
+
+.content
+  p
+    font-family: 'Open Sans Condensed', sans-serif
+    font-size: 15pt
+  .pdf
+    ul
+      list-style-type: none
+      padding-left: 0
+      li
+        height: 150px
+        border: 3px solid #aaaaaa
+        margin-top: 30px
+        &:last-child
+          a
+            padding-top: 25px
+        img
+          margin-top: 32px
+          margin-left: 20px
+          float: left
+        a
+          font-family: 'Open Sans Condensed', sans-serif
+          font-weight: 900
+          font-size: 17pt
+          padding-top: 36px
+          display: block
+          padding-left: 215px
+          color: $font-color
+          &:hover
+            color: $blue
+        i
+          color: $blue
+        span
+          font-family: 'Open Sans Condensed', sans-serif
+          font-size: 17pt
+          font-weight: 300
+          margin-left: 80px
+  .picture
+    background-image: url(../img/picture.png)
+    background-size: cover
+    background-repeat: no-repeat
+    height: 270px
+    padding-left: 20px
+    overflow: hidden
+    margin-top: 14px
+  .links
+    width: 94%
+    margin-left: 10px
+    div
+      background-color: #e5e5e5
+
+    a
+      width: 300px
+      display: block
+      font-family: 'Open Sans Condensed', sans-serif
+      font-weight: 900
+      font-size: 17pt
+      color: $font-color
+      padding-top: 10px
+      &:hover
+        color: $blue
+      i
+        color: $blue
+        padding-left: 10px
+        padding-right: 10px
+      span
+        padding-left: 30px
+  .right_side
+    div
+      &:nth-child(3)
+        p
+          margin-top: 0
+        a
+
+          font-family: 'Open Sans Condensed', sans-serif
+          font-weight: 900
+          font-size: 17pt
+          color: $font-color
+          &:hover
+            color: $blue
+          i
+            color: $blue
+            padding-right: 5px
+    .kontakt
+      list-style-type: none
+      padding-left: 0
+      li
+        height: 60px
+        background-color: #e5e5e5
+        &:first-child
+          background-color: $blue
+          span
+            color: white
+            font-weight: bold
+            font-size: 14pt
+            display: block
+            padding-top: 15px
+            padding-left: 20px
+        a
+          font-family: 'Open Sans Condensed', sans-serif
+          font-size: 15pt
+          color: $font-color
+          padding-top: 15px
+          display: inline-block
+          &:hover
+            color: $blue
+      i
+        padding-left: 20px
+        font-size: 17pt
+        padding-right: 35px
+        color: $blue
+
+  .truck
+    height: 400px
+    overflow: hidden
+    a
+      float: right
+      font-family: 'Open Sans Condensed', sans-serif
+      font-weight: 900
+      font-size: 17pt
+      color: $font-color
+      &:hover
+        color: $blue
+      i
+        color: $blue
+        padding-right: 5px
+  .download
+    ul
+      margin-top: 40px
+      padding-left: 0
+      list-style-type: none
+      li
+        background-color: white
+        padding-top: 20px
+        border-left: 2px solid #e5e5e5
+        border-right: 2px solid #e5e5e5
+
+        &:first-child
+          background-color: #e5e5e5
+          height: 50px
+          padding-top: 10px
+          padding-left: 20px
+          span
+            font-family: 'Open Sans Condensed', sans-serif
+            font-weight: 900
+            font-size: 17pt
+            color: $font-color
+        &:nth-child(2)
+          span
+            margin-left: 50px
+        &:last-child
+          border-bottom: 2px solid #e5e5e5
+          span
+            margin-left: 50px
+
+        a
+          font-family: 'Open Sans Condensed', sans-serif
+          font-weight: 900
+          font-size: 17pt
+          color: $font-color
+          &:hover
+            color: $blue
+        i
+          padding-left: 20px
+          font-size: 17pt
+          padding-right: 20px
+          color: $blue
+        span
+          font-family: 'Open Sans Condensed', sans-serif
+          font-size: 17pt
+          font-weight: 300
+
+.down_text2
+  hr
+    color: #e5e5e5
+    border-top: 3px solid #e5e5e5
+    font-size: 15pt
+  a
+    font-family: 'Open Sans Condensed', sans-serif
+    font-weight: 900
+    font-size: 17pt
+    color: $font-color
+    &:hover
+      color: $blue
+    i
+      color: $blue
+      padding-right: 5px
+  span
+    font-family: 'Open Sans Condensed', sans-serif
+    font-size: 14pt
+
+
+.down_text
+  margin-top: 40px
+  hr
+    color: #e5e5e5
+    border-top: 3px solid #e5e5e5
+
+  span
+    font-family: 'Open Sans Condensed', sans-serif
+    font-size: 15pt
+  p
+    font-family: 'Open Sans Condensed', sans-serif
+    font-size: 15pt
+  a
+    font-family: 'Open Sans Condensed', sans-serif
+    font-weight: 900
+    font-size: 17pt
+    color: $font-color
+    &:hover
+      color: $blue
+    i
+      color: $blue
+      padding-right: 5px
+//FOOTER
+
+
+.footer
+  margin-top: 1495px
+  background-color: $blue
+  height: 265px
+  color: white
+  clear: both
+  h3
+    margin-bottom: 5px
+  img
+    float: right
+    padding-top: 15px
+    padding-right: 15px
+  ul
+    list-style-type: none
+    font-size: 15pt
+    font-family: 'Open Sans Condensed', sans-serif
+    font-weight: 300
+    padding-left: 0
+  li
+    a
+      color: white
+      padding-left: 5px
+
+  .footer_bot
+    padding-top: 40px
+    ul
+      li
+        padding-right: 40px
+        display: inline-block
+        &:not(:last-child)
+          border-right: 1px solid white
+        &:not(:first-child)
+          padding-left: 40px
+
+.footer_drop_on
+  display: block !important
+  z-index: 10
+.footer_xs
+  background-color: $blue
+  height: 350px
+  clear: both
+  img
+    width: 75px
+    padding-top: 20px
+  ul
+    list-style: none
+    padding: 0
+    li
+      font-family: 'Open Sans Condensed', sans-serif
+      font-size: 15pt
+      padding-top: 10px
+      color: white
+      font-weight: bold
+      cursor: pointer
+      i
+        color: white
+        padding-left: 5px
+
+
+  .footer_drop
+    margin-left: 10px
+    display: none
+    li
+      i
+        color: white
+        padding-right: 5px
+      a
+        font-weight: 300
+        color: white
+
+.footer_xs_bot
+  ul
+    text-align: center
+    li
+      display: inline-block
+      &:last-child
+        a
+          border: none
+      a
+        font-weight: 300
+        padding-left: 10px
+        padding-right: 10px
+        color: white
+        border-right: 1px solid white
+        font-size: 12pt
+.on
+  display: block !important
+  z-index: 10
+.blur
+  opacity: 0.4
+  position: absolute
+  top: 0
+  left: 0
+  background-color: black
+  width: 100%
+  z-index: 1000
+  height: 3000px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media"
+
